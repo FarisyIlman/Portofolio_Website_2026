@@ -1,4 +1,3 @@
-// components/sections/Skills.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -21,35 +20,39 @@ const CATEGORIES: { name: TabCategory; icon: React.ReactNode }[] = [
 export function Skills() {
   const [activeTab, setActiveTab] = useState<TabCategory>('All');
 
-  const filteredSkills = activeTab === 'All'
-    ? SKILLS_DATA
-    : SKILLS_DATA.filter((skill) => skill.category === activeTab);
+  const filteredSkills =
+    activeTab === 'All'
+      ? SKILLS_DATA
+      : SKILLS_DATA.filter((skill) => skill.category === activeTab);
 
   return (
-    <section 
-      id="skills" 
+    <section
+      id="skills"
       className="relative min-h-screen py-24 px-6 md:px-12 bg-slate-950 border-t border-white/5 overflow-hidden"
     >
-      {/* Structural Decorative Background Wash */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
+      {/* Background Glow Effect */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[160px] pointer-events-none" />
 
-      <div className="container mx-auto max-w-5xl relative z-10">
-        
+      <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header Text */}
-        <div className="mb-16 text-center">
-          <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase block mb-3">// 02. Tech Capabilities</span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white">Engine Stack Matrix</h2>
+        <div className="mb-14 text-center">
+          <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase block mb-3">
+            // 02. Tech Capabilities
+          </span>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white uppercase">
+            TECH STACK
+          </h2>
         </div>
 
         {/* Dynamic Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-14 max-w-4xl mx-auto">
           {CATEGORIES.map((cat) => {
             const isActive = activeTab === cat.name;
             return (
               <button
                 key={cat.name}
                 onClick={() => setActiveTab(cat.name)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs font-semibold tracking-wide border transition-all duration-300 ${
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-semibold tracking-wide border transition-all duration-300 ${
                   isActive
                     ? 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30 shadow-[0_0_20px_rgba(34,211,238,0.15)]'
                     : 'bg-slate-900/40 border-white/5 text-slate-400 hover:text-slate-200 hover:border-white/10'
@@ -62,56 +65,44 @@ export function Skills() {
           })}
         </div>
 
-        {/* Skill Cards Grid */}
-        <motion.div 
-          layout 
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        {/* Skill Cards Grid (Matching Image Grid Style) */}
+        <motion.div
+          layout
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4 justify-center"
         >
           <AnimatePresence mode="popLayout">
             {filteredSkills.map((skill) => {
               const SkillLogo = getSkillIcon(skill.name);
-              
-              // Safe String Casting for skill.level & percentage fallback
-              const displayMetric = skill.percentage 
-                ? `${skill.percentage}%` 
-                : String(skill.level ?? 'PRO').substring(0, 3).toUpperCase();
 
               return (
                 <motion.div
                   key={skill.name}
                   layout
-                  initial={{ opacity: 0, scale: 0.92 }}
+                  initial={{ opacity: 0, scale: 0.85 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.92 }}
-                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                  className="bg-slate-900/50 border border-white/10 backdrop-blur-md p-6 rounded-xl flex items-center justify-between group hover:border-cyan-500/20 transition-all duration-300"
+                  exit={{ opacity: 0, scale: 0.85 }}
+                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                  className="bg-slate-900/40 border border-white/10 backdrop-blur-md p-4 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-purple-500/40 hover:bg-slate-900/70 hover:shadow-[0_0_25px_rgba(168,85,247,0.15)] transition-all duration-300"
                 >
-                  <div className="flex items-center gap-4">
-                    {/* Skill Logo Node */}
-                    <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center group-hover:bg-cyan-500/10 group-hover:border-cyan-500/20 transition-all duration-300 shrink-0">
-                      <SkillLogo className="w-5 h-5 text-slate-300 group-hover:text-cyan-400 transition-colors duration-300" />
-                    </div>
-
-                    <div className="space-y-1">
-                      <h3 className="font-bold text-slate-100 group-hover:text-white transition-colors text-sm">
-                        {skill.name}
-                      </h3>
-                      <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider block">
-                        Level: {String(skill.level)}
-                      </span>
-                    </div>
+                  {/* Skill Logo */}
+                  <div className="w-12 h-12 mb-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-purple-500/10 group-hover:border-purple-500/20 transition-all duration-300">
+                    <SkillLogo className="w-6 h-6 text-slate-300 group-hover:text-purple-300 transition-colors duration-300" />
                   </div>
 
-                  {/* Micro Visual Performance Metric Badge */}
-                  <div className="px-2.5 py-1.5 rounded-lg bg-white/5 border border-white/5 text-[11px] font-mono text-cyan-400/80 font-bold group-hover:bg-cyan-500/10 group-hover:text-cyan-400 group-hover:border-cyan-500/20 transition-all duration-300 shrink-0">
-                    {displayMetric}
-                  </div>
+                  {/* Skill Name */}
+                  <h3 className="font-bold text-slate-100 group-hover:text-white transition-colors text-xs mb-1 truncate max-w-full">
+                    {skill.name}
+                  </h3>
+
+                  {/* Skill Level Badge (Beginner / Intermediate / Advanced) */}
+                  <span className="text-[10px] font-mono text-slate-400 group-hover:text-cyan-400 transition-colors duration-300 capitalize">
+                    {skill.level ?? 'Intermediate'}
+                  </span>
                 </motion.div>
               );
             })}
           </AnimatePresence>
         </motion.div>
-
       </div>
     </section>
   );

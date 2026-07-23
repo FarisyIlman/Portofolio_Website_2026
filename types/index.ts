@@ -1,5 +1,3 @@
-// types/index.ts
-
 export type SkillCategory = 
   | 'Languages' 
   | 'Frontend' 
@@ -13,9 +11,11 @@ export type SkillCategory =
 
 export type TabCategory = 'All' | SkillCategory;
 
+export type SkillLevel = 'Beginner' | 'Intermediate' | 'Advanced';
+
 export interface Skill {
   name: string;
-  level: number; // Scale 0-100
+  level: SkillLevel; // Disesuaikan menjadi 'Beginner' | 'Intermediate' | 'Advanced'
   percentage?: number;
   category: SkillCategory;
 }

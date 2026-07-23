@@ -1,75 +1,110 @@
-// data/portfolioData.ts
 import { Skill, Project, TimelineEvent } from '@/types';
 
 export const SKILLS_DATA: Skill[] = [
   // Programming Languages
-  { name: 'PHP', level: 85, category: 'Languages' },
-  { name: 'Python', level: 80, category: 'Languages' },
-  { name: 'TypeScript / JavaScript', level: 75, category: 'Languages' },
-  { name: 'C++', level: 75, category: 'Languages' },
-  { name: 'Java', level: 72, category: 'Languages' },
+  { name: 'PHP', level: 'Advanced', category: 'Languages' },
+  { name: 'Python', level: 'Advanced', category: 'Languages' },
+  { name: 'TypeScript / JavaScript', level: 'Intermediate', category: 'Languages' },
+  { name: 'C++', level: 'Intermediate', category: 'Languages' },
+  { name: 'Java', level: 'Intermediate', category: 'Languages' },
 
   // Frontend & UI
-  { name: 'Next.js / React', level: 72, category: 'Frontend' },
-  { name: 'Tailwind CSS', level: 78, category: 'Frontend' },
-  { name: 'Blade Templating', level: 80, category: 'Frontend' },
-  { name: 'Bootstrap', level: 70, category: 'Frontend' },
+  { name: 'Next.js / React', level: 'Intermediate', category: 'Frontend' },
+  { name: 'Tailwind CSS', level: 'Advanced', category: 'Frontend' },
+  { name: 'Blade Templating', level: 'Advanced', category: 'Frontend' },
+  { name: 'Bootstrap', level: 'Intermediate', category: 'Frontend' },
 
   // Backend & Databases
-  { name: 'Laravel', level: 85, category: 'Backend' },
-  { name: 'Filament PHP', level: 78, category: 'Backend' },
-  { name: 'MySQL / PostgreSQL', level: 80, category: 'Backend' },
-  { name: 'Node.js / Express', level: 65, category: 'Backend' },
-  { name: 'Telegram Bot API Integrations', level: 82, category: 'Backend' },
+  { name: 'Laravel', level: 'Advanced', category: 'Backend' },
+  { name: 'Filament PHP', level: 'Advanced', category: 'Backend' },
+  { name: 'MySQL / PostgreSQL', level: 'Advanced', category: 'Backend' },
+  { name: 'Node.js / Express', level: 'Intermediate', category: 'Backend' },
+  { name: 'Telegram Bot API Integrations', level: 'Advanced', category: 'Backend' },
 
   // Machine Learning & Analytics
-  { name: 'Scikit-Learn', level: 80, category: 'Machine Learning' },
-  { name: 'PyTorch', level: 72, category: 'Machine Learning' },
-  { name: 'TabNet / FT-Transformer', level: 70, category: 'Machine Learning' },
-  { name: 'XGBoost / LightGBM', level: 75, category: 'Machine Learning' },
-  { name: 'Pandas / NumPy', level: 82, category: 'Machine Learning' },
+  { name: 'Scikit-Learn', level: 'Advanced', category: 'Machine Learning' },
+  { name: 'PyTorch', level: 'Intermediate', category: 'Machine Learning' },
+  { name: 'TabNet / FT-Transformer', level: 'Intermediate', category: 'Machine Learning' },
+  { name: 'XGBoost / LightGBM', level: 'Intermediate', category: 'Machine Learning' },
+  { name: 'Pandas / NumPy', level: 'Advanced', category: 'Machine Learning' },
 
   // AI & Natural Language Processing
-  { name: 'NLP & Expert Systems', level: 75, category: 'Machine Learning' },
-  { name: 'Chatbot Backends / Webhooks', level: 80, category: 'Machine Learning' },
+  { name: 'NLP & Expert Systems', level: 'Intermediate', category: 'Machine Learning' },
+  { name: 'Chatbot Backends / Webhooks', level: 'Advanced', category: 'Machine Learning' },
 
   // Cybersecurity & Systems
-  { name: 'Kali Linux / Security Tools', level: 75, category: 'DevOps' },
-  { name: 'Network Configuration & Security Routing', level: 72, category: 'DevOps' },
-
+  { name: 'Kali Linux / Security Tools', level: 'Intermediate', category: 'DevOps' },
+  { name: 'Network Configuration & Security Routing', level: 'Intermediate', category: 'DevOps' },
 
   // Infrastructure & Security
-  { name: 'Linux System Admin', level: 78, category: 'DevOps' },
-  { name: 'Wazuh SIEM', level: 75, category: 'DevOps' },
-  { name: 'Git / GitHub', level: 82, category: 'DevOps' },
+  { name: 'Linux System Admin', level: 'Intermediate', category: 'DevOps' },
+  { name: 'Wazuh SIEM', level: 'Intermediate', category: 'DevOps' },
+  { name: 'Git / GitHub', level: 'Advanced', category: 'DevOps' },
 
-    // IoT & Embedded Hardware
-  { name: 'ESP32', level: 78, category: 'IoT & Hardware' },
-  { name: 'Arduino', level: 75, category: 'IoT & Hardware' },
-  { name: 'Motor Drivers (L298N) & Robotics Chassis', level: 75, category: 'IoT & Hardware' },
+  // IoT & Embedded Hardware
+  { name: 'ESP32', level: 'Intermediate', category: 'IoT & Hardware' },
+  { name: 'Arduino', level: 'Intermediate', category: 'IoT & Hardware' },
+  { name: 'Motor Drivers (L298N) & Robotics Chassis', level: 'Intermediate', category: 'IoT & Hardware' },
 ];
 
 export const TIMELINE_DATA: TimelineEvent[] = [
-  {
-    id: 'edu-1',
-    type: 'education',
-    title: 'Undergraduate Informatics Student (Semester 7)',
-    subtitle: 'Institut Teknologi Nasional (ITENAS)',
-    period: '2023 - Present',
-    responsibilities: [
-      'Currently completing an undergraduate thesis benchmarking classical and deep learning methods (Logistic Regression, Random Forest, XGBoost/LightGBM, TabNet, FT-Transformer) on tabular data.',
-      'Coursework in Deep Learning (IFB-454), including FT-Transformer implementation, loss function comparison, and regularization techniques.'
-    ]
-  },
+  // Pengalaman 1
   {
     id: 'lead-1',
     type: 'leadership',
     title: 'Secretary General (BPA)',
     subtitle: 'HMIF Student Body - ITENAS',
-    period: '2026 - Present',
+    period: 'Feb 2026 - Present',
     responsibilities: [
-      'Leading documentation and organizational workflows across HMIF ITENAS activities, including Dies Natalis and new student orientation.',
-      'Coordinating internal council processes and formal organizational correspondence for the student body.'
+      'Leading documentation and organizational workflows across HMIF ITENAS activities.',
+      'Coordinating internal council processes and formal organizational correspondence.'
+    ]
+  },
+  // Pengalaman 2
+  {
+    id: 'lead-2',
+    type: 'leadership',
+    title: 'Head of Human Resources Development Division',
+    subtitle: 'HMIF Student Body - ITENAS',
+    period: 'Jan 2025 - Dec 2025',
+    responsibilities: [
+      'Planning and executing member development programs and internal talent evaluation.',
+      'Fostering leadership succession and organizational growth.'
+    ]
+  },
+  // Pengalaman 3
+  {
+    id: 'lead-3',
+    type: 'leadership',
+    title: 'Household Division Staff Member',
+    subtitle: 'HMIF Student Body - ITENAS',
+    period: 'Jun 2024 - Dec 2024',
+    responsibilities: [
+      'Planning and executing member development programs and internal talent evaluation.',
+      'Fostering leadership succession and organizational growth.'
+    ]
+  },
+  // ➕ TAMBAHKAN PENGALAMAN BARU DI SINI
+  {
+    id: 'exp-2',
+    type: 'experience', // Atau 'leadership'
+    title: 'Chief Executive of the New Member Acceptance  2024',
+    subtitle: 'Itenas No Nippon Kurabu (INKU)',
+    period: 'Jul 2024 -Sep 2024',
+    responsibilities: [
+      'Poin pencapaian atau tanggung jawab 1',
+      'Poin pencapaian atau tanggung jawab 2'
+    ]
+  },
+    {
+    id: 'exp-1',
+    type: 'experience', // Atau 'leadership'
+    title: 'Head of Logistics Division for the 2024 Graduation',
+    subtitle: 'HMIF Student Body - ITENAS',
+    period: 'Jul 2024 -Sep 2024',
+    responsibilities: [
+      'Poin pencapaian atau tanggung jawab 1',
+      'Poin pencapaian atau tanggung jawab 2'
     ]
   }
 ];
