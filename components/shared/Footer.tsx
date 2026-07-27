@@ -47,7 +47,7 @@ export function Footer() {
             <div className="flex items-center gap-4 pt-4">
               {/* GitHub */}
               <a 
-                href="https://github.com" 
+                href="https://github.com/FarisyIlman" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="p-3 bg-white/5 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition-all border border-white/5" 
@@ -60,7 +60,7 @@ export function Footer() {
 
               {/* LinkedIn */}
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/farisy-ilman-syarif-890294317/" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="p-3 bg-white/5 rounded-xl text-slate-400 hover:text-cyan-400 hover:bg-white/10 transition-all border border-white/5" 
@@ -73,7 +73,7 @@ export function Footer() {
 
               {/* Email */}
               <a 
-                href="mailto:farisy.ilman@example.com" 
+                href="mailto:farisysyarif@gmail.com" 
                 className="p-3 bg-white/5 rounded-xl text-slate-400 hover:text-emerald-400 hover:bg-white/10 transition-all border border-white/5"
                 aria-label="Send Direct Email"
               >
