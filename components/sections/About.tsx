@@ -62,7 +62,7 @@ export function About() {
               Long-term, I&apos;m working toward a <strong className="text-white font-medium">Master&apos;s degree</strong> and a specialization in <strong className="text-white font-medium">MLOps</strong> bridging the gap between experimental ML models and reliable, deployed systems, so that intelligent software can be shipped with the same rigor and stability as any production application.
             </p>
             <p>
-              Beyond technical parameters, I am deeply committed to operational leadership. As Secretary General of BPA within HMIF ITENAS, I lead documentation and organizational workflows across student activities from Dies Natalis to new student orientation — because I believe engineering excellence is amplified when paired with transparent process and open communication across teams.
+              Beyond technical parameters, I am deeply committed to operational leadership. As Secretary General of BPA within HMIF ITENAS, I lead documentation and organizational workflows across student activities from Dies Natalis to new student orientation because I believe engineering excellence is amplified when paired with transparent process and open communication across teams.
             </p>
           </motion.div>
 
