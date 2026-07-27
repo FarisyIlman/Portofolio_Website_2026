@@ -68,7 +68,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     subtitle: 'HMIF Student Body - ITENAS',
     period: 'Jan 2025 - Dec 2025',
     responsibilities: [
-      'Planning and executing member development programs and internal talent evaluation.',
+      'Planning, Solving, and Executing member development programs and internal talent evaluation.',
       'Fostering leadership succession and organizational growth.'
     ]
   },
@@ -80,8 +80,8 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     subtitle: 'HMIF Student Body - ITENAS',
     period: 'Jun 2024 - Dec 2024',
     responsibilities: [
-      'Planning and executing member development programs and internal talent evaluation.',
-      'Fostering leadership succession and organizational growth.'
+      'Safeguarding, managing, and documenting the assets of the HMIF ITENAS organization.',
+      'Ensuring the smooth handling of logistics and the organizations internal needs.'
     ]
   },
   // ➕ TAMBAHKAN PENGALAMAN BARU DI SINI
@@ -92,8 +92,8 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     subtitle: 'Itenas No Nippon Kurabu (INKU)',
     period: 'Jul 2024 -Sep 2024',
     responsibilities: [
-      'Poin pencapaian atau tanggung jawab 1',
-      'Poin pencapaian atau tanggung jawab 2'
+      'Lead and coordinate the entire new member onboarding process, including selection, orientation, and integration into the organization.',
+      'Design, delegate, and oversee internal and external workflows to ensure the onboarding process runs smoothly and efficiently.',
     ]
   },
     {
@@ -103,8 +103,8 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     subtitle: 'HMIF Student Body - ITENAS',
     period: 'Jul 2024 -Sep 2024',
     responsibilities: [
-      'Poin pencapaian atau tanggung jawab 1',
-      'Poin pencapaian atau tanggung jawab 2'
+      'Lead and coordinate the entire logistics process for the graduation event, including venue setup, facilities, and infrastructure.',
+      'Document logistics needs, schedule deliveries, and ensure all equipment is available on time.',
     ]
   }
 ];
