@@ -56,7 +56,7 @@ export function Experience() {
           className="mb-20 text-center"
         >
           <span className="text-xs font-mono tracking-widest text-indigo-400 uppercase block mb-3">
-            // 05. Leadership & Organization
+            // 06. Leadership & Organization
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white">
             Track Record

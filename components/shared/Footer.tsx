@@ -37,7 +37,7 @@ export function Footer() {
         {/* Upper Segment: Integrated Gateway Connect Form Entry */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
           <div className="lg:col-span-5 space-y-4">
-            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase block">// 08. Channel Connect</span>
+            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase block">// 09. Channel Connect</span>
             <h2 className="text-3xl font-black text-white tracking-tight">Let's Build Something Exceptional</h2>
             <p className="text-sm text-slate-400 leading-relaxed font-normal max-w-sm">
               Open for technical consultations, full-stack systems design engagements, or strategic organizational alignment inquiries.

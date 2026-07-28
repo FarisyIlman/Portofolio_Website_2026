@@ -56,7 +56,7 @@ export function Work() {
           className="mb-16 text-center md:text-left"
         >
           <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase block mb-3">
-            // 06. Professional Background
+            // 05. Professional Background
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white">
             Work Experience
