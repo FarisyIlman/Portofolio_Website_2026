@@ -135,7 +135,7 @@ export function Vision() {
             <div>
               <h4 className="text-white font-bold text-lg">Engineering Philosophy</h4>
               <p className="text-slate-400 text-sm mt-0.5">
-                Building actual real systems that require bridging analytical models with production-grade backend stability and security.
+                Building actual real useable systems that require bridging analytical models with production-grade backend stability and security.
               </p>
             </div>
           </div>
