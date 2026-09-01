@@ -48,11 +48,9 @@ export const SKILLS_DATA: Skill[] = [
   { name: 'DHT 11 & 22 Sensors', level: 'Advanced', category: 'IoT & Hardware' },
   { name: 'MQTT', level: 'Intermediate', category: 'IoT & Hardware' },
   { name: 'Mosquitto', level: 'Intermediate', category: 'IoT & Hardware' },
-
 ];
 
 export const TIMELINE_DATA: TimelineEvent[] = [
-  // Pengalaman 1
   {
     id: 'lead-1',
     type: 'leadership',
@@ -64,7 +62,6 @@ export const TIMELINE_DATA: TimelineEvent[] = [
       'Coordinating internal council processes and formal organizational correspondence.'
     ]
   },
-  // Pengalaman 2
   {
     id: 'lead-2',
     type: 'leadership',
@@ -76,7 +73,6 @@ export const TIMELINE_DATA: TimelineEvent[] = [
       'Fostering leadership succession and organizational growth.'
     ]
   },
-  // Pengalaman 3
   {
     id: 'lead-3',
     type: 'leadership',
@@ -88,27 +84,26 @@ export const TIMELINE_DATA: TimelineEvent[] = [
       'Ensuring the smooth handling of logistics and the organizations internal needs.'
     ]
   },
-  // ➕ TAMBAHKAN PENGALAMAN BARU DI SINI
   {
     id: 'exp-2',
-    type: 'experience', // Atau 'leadership'
-    title: 'Chief Executive of the New Member Acceptance  2024',
+    type: 'leadership',
+    title: 'Chief Executive of the New Member Acceptance 2024',
     subtitle: 'Itenas No Nippon Kurabu (INKU)',
     period: 'Jul 2024 - Sep 2024',
     responsibilities: [
       'Lead and coordinate the entire new member onboarding process, including selection, orientation, and integration into the organization.',
-      'Design, delegate, and oversee internal and external workflows to ensure the onboarding process runs smoothly and efficiently.',
+      'Design, delegate, and oversee internal and external workflows to ensure the onboarding process runs smoothly and efficiently.'
     ]
   },
-    {
+  {
     id: 'exp-1',
-    type: 'experience', // Atau 'leadership'
+    type: 'leadership',
     title: 'Head of Logistics Division for the 2024 Graduation',
     subtitle: 'HMIF Student Body - ITENAS',
     period: 'Jul 2024 - Sep 2024',
     responsibilities: [
       'Lead and coordinate the entire logistics process for the graduation event, including venue setup, facilities, and infrastructure.',
-      'Document logistics needs, schedule deliveries, and ensure all equipment is available on time.',
+      'Document logistics needs, schedule deliveries, and ensure all equipment is available on time.'
     ]
   }
 ];
@@ -118,7 +113,7 @@ export const PROJECTS_DATA: Project[] = [
     slug: 'webptdi-gcg-module',
     title: 'PT Dirgantara Indonesia Company Website',
     category: 'Web Development',
-    shortDescription: 'A Laravel 12 project about PT Dirgantara Indonesia Company Website',
+    shortDescription: 'A Laravel 12 project about PT Dirgantara Indonesia Company Website.',
     detailedDescription: 'Built and extended a GCG module inside a larger Laravel 12 web application (webptdi), including bug fixes, a centralized configuration registry, a PDF.js-based in-browser file viewer, and admin-facing upload functionality for governance documents.',
     problemStatement: 'The organization needed a reliable way for admins to upload, manage, and display governance documents without scattered configuration or unreliable file rendering.',
     solution: 'Refactored the module around a centralized config registry, integrated PDF.js for consistent in-browser document viewing, and built admin upload flows on top of Laravel and Filament.',
@@ -126,21 +121,21 @@ export const PROJECTS_DATA: Project[] = [
     technologies: ['Laravel 12', 'PHP', 'PDF.js', 'MySQL'],
     features: ['Centralized configuration registry', 'In-browser PDF viewer', 'Admin document upload management'],
     featured: true,
-    liveUrl: 'https://www.indonesian-aerospace.com/en/',                    // opsional
+    liveUrl: 'https://www.indonesian-aerospace.com/en/'
   },
   {
     slug: 'wbs-portal-PTDI',
-    title: 'PT Dirgantara Indonesia whistleblowing system Portal',
+    title: 'PT Dirgantara Indonesia Whistleblowing System Portal',
     category: 'Web Development',
     shortDescription: 'A Laravel 12 portal for managing whistleblowing reports, including admin dashboards and secure file handling.',
     detailedDescription: 'Developed a comprehensive whistleblowing portal for PT Dirgantara Indonesia, featuring admin dashboards, secure file handling, and streamlined report management.',
-    problemStatement: 'The organization needed a reliable way for admins to upload, manage, and display whistleblowing reports without scattered configuration or unreliable file rendering.',
-    solution: 'Refactored the module around a centralized config registry, integrated PDF.js for consistent in-browser document viewing, and built admin upload flows on top of Laravel and Filament.',
+    problemStatement: 'The organization needed a secure, reliable portal for reporting misconduct with strict confidentiality and proper admin verification workflow.',
+    solution: 'Engineered a secure portal using Laravel 12 and Filament with encrypted file storage and structured audit logging.',
     role: 'Backend / Full-Stack Developer',
     technologies: ['Laravel 12', 'PHP', 'Filament', 'PDF.js', 'MySQL'],
-    features: ['Centralized configuration registry', 'In-browser PDF viewer', 'Admin document upload management'],
+    features: ['Encrypted report handling', 'Custom Filament admin dashboard', 'In-browser PDF review'],
     featured: true,
-    liveUrl: 'https://wbs.indonesian-aerospace.com/',                    // opsional
+    liveUrl: 'https://wbs.indonesian-aerospace.com/'
   },
   {
     slug: 'ta-indonesian-hybrid-rag-optimization',
@@ -153,10 +148,10 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Researcher',
     technologies: ['Python', 'LangChain', 'PyTorch', 'BM25', 'BGE-M3', 'RAGAS Framework', 'Hugging Face'],
     features: [
-    'Hybrid retrieval architecture (BM25 + BGE-M3)',
-    'End-to-end Indonesian language RAG optimization',
-    'Comprehensive evaluation using RAGAS metrics'
-  ],
+      'Hybrid retrieval architecture (BM25 + BGE-M3)',
+      'End-to-end Indonesian language RAG optimization',
+      'Comprehensive evaluation using RAGAS metrics'
+    ],
     featured: true
   },
   {
@@ -170,27 +165,27 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Security Lab Engineer',
     technologies: ['Wazuh SIEM', 'Linux', 'Telegram API', 'Ubuntu Networking'],
     features: ['Custom detection rules', 'Active response automation', 'Real-time Telegram alerting'],
-    featured: false 
+    featured: false
   },
   {
     slug: 'mindmate-mental-health-chatbot',
     title: 'MindMate — Bayesian Stress Diagnosis Chatbot',
     category: 'Web Development',
-    shortDescription: 'A group project building a web-based mental health chatbot using Bayesian stress diagnosis.',
-    detailedDescription: 'Contributed to MindMate, a group project implementing a Bayesian stress diagnosis tool with an HTML/JS frontend and a Node.js/Python backend, fixing UI bugs around question re-display and result rendering.',
+    shortDescription: 'A web-based mental health chatbot using Bayesian stress diagnosis.',
+    detailedDescription: 'Contributed to MindMate, a project implementing a Bayesian stress diagnosis tool with an HTML/JS frontend and a Node.js/Python backend, fixing UI bugs around question re-display and result rendering.',
     problemStatement: 'Users needed a simple, guided way to get a preliminary stress assessment through conversational interaction.',
     solution: 'Fixed frontend bugs affecting question flow and result/spinner rendering to make the diagnosis flow reliable end-to-end.',
     role: 'Frontend Developer',
     technologies: ['JavaScript', 'HTML/CSS', 'Node.js', 'Python'],
     features: ['Bayesian stress diagnosis logic', 'Conversational question flow', 'Result visualization'],
     featured: false,
-    githubUrl: 'https://github.com/FarisyIlman/MindMate_Sistem_pakar_dan_bahasa_alamiah_', // opsional
+    githubUrl: 'https://github.com/FarisyIlman/MindMate_Sistem_pakar_dan_bahasa_alamiah_'
   },
   {
     slug: 'ft-transformer-tabular-datasets',
     title: 'FT-Transformer Across Four Tabular Datasets',
     category: 'Machine Learning',
-    shortDescription: 'A Deep Learning coursework project implementing FT-Transformer on four different tabular datasets, with a full academic report.',
+    shortDescription: 'A Deep Learning project implementing FT-Transformer on four different tabular datasets with an academic report.',
     detailedDescription: 'Implemented the FT-Transformer architecture from scratch for Deep Learning coursework (IFB-454), applying it across four distinct tabular datasets and writing an academic report analyzing its performance and behavior on each.',
     problemStatement: 'Transformer-based architectures are common for text and images, but their behavior on structured tabular data across varying dataset characteristics is less intuitive to predict.',
     solution: 'Implemented and trained FT-Transformer on four datasets with different sizes and feature types, documenting performance differences and practical implementation challenges in a written report.',
@@ -198,13 +193,13 @@ export const PROJECTS_DATA: Project[] = [
     technologies: ['Python', 'PyTorch', 'Pandas', 'Scikit-Learn'],
     features: ['Custom FT-Transformer implementation', 'Evaluation across four tabular datasets', 'Written academic performance report'],
     featured: false,
-    githubUrl: 'https://github.com/username/repo-name', // opsional
+    githubUrl: 'https://github.com/FarisyIlman/DeepLearning_FT-Transformer'
   },
   {
     slug: 'knn-regression-notebook',
     title: 'KNN Regression Multi-Dataset Notebook',
     category: 'Machine Learning',
-    shortDescription: 'A Google Colab notebook applying K-Nearest Neighbors regression across multiple datasets, restructured for clarity.',
+    shortDescription: 'A Google Colab notebook applying K-Nearest Neighbors regression across multiple datasets.',
     detailedDescription: 'Fixed and restructured a multi-dataset KNN Regression notebook in Google Colab, cleaning up the pipeline so each dataset could be processed and evaluated consistently.',
     problemStatement: 'The original notebook mixed logic across datasets in a way that made results hard to compare and debug.',
     solution: 'Refactored the notebook into a consistent per-dataset structure, fixing bugs in the regression and evaluation steps along the way.',
@@ -225,15 +220,41 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Embedded Systems Developer',
     technologies: ['ESP32', 'C++', 'L298N H-Bridge Driver', 'PWM Control'],
     features: ['Synchronized 4-wheel drive', 'PWM speed control', 'Basic sensor feedback loop'],
-    featured: false,
-        githubUrl: 'https://github.com/username/repo-name', // opsional
-    liveUrl: 'https://example.com',                    // opsional  
+    featured: false
   }
 ];
 
 export const FUTURE_AMBITIONS = [
-  { title: 'Graduate with an Informatics Bachelor’s Degree', timeline: 'Next Milestone', glow: 'from-amber-400 to-orange-500' },
-  { title: 'Deepen expertise in Deep Learning and LLM Systems', timeline: 'Short-term Goal', glow: 'from-cyan-400 to-blue-500' },
-  { title: 'Specialize in MLOps — deploying ML models as production systems', timeline: 'Mid-term Target', glow: 'from-blue-500 to-purple-600' },
-  { title: 'Pursue a Master’s Degree in Computer Science', timeline: 'Long-term Horizon', glow: 'from-purple-500 to-pink-500' }
+  {
+    id: 'amb-1',
+    title: 'Graduate with an Informatics Bachelors Degree',
+    timeline: 'Next Milestone',
+    glow: 'from-amber-400 to-orange-500',
+    description: 'Completing undergraduate thesis work at ITENAS on Indonesian Hybrid RAG Optimization with strong academic rigor.',
+    goals: ['Complete thesis defense with high marks', 'Publish research results on Hybrid RAG benchmark']
+  },
+  {
+    id: 'amb-2',
+    title: 'Deepen Expertise in Deep Learning & LLM Systems',
+    timeline: 'Short-term Goal',
+    glow: 'from-cyan-400 to-blue-500',
+    description: 'Mastering advanced RAG techniques, fine-tuning open-source LLMs, and expanding NLP pipeline capabilities.',
+    goals: ['Implement domain-specific LLM fine-tuning', 'Build scalable vector search architectures']
+  },
+  {
+    id: 'amb-3',
+    title: 'Specialize in MLOps — Production System Deployment',
+    timeline: 'Mid-term Target',
+    glow: 'from-blue-500 to-purple-600',
+    description: 'Bridging the gap between ML models and enterprise infrastructure using CI/CD pipelines, containerization, and monitoring.',
+    goals: ['Deploy automated model monitoring pipelines', 'Build zero-downtime inference webhooks']
+  },
+  {
+    id: 'amb-4',
+    title: 'Pursue a Masters Degree in Computer Science',
+    timeline: 'Long-term Horizon',
+    glow: 'from-purple-500 to-pink-500',
+    description: 'Advancing formal research in Artificial Intelligence, distributed computing systems, and automated intelligence.',
+    goals: ['Secure postgraduate fellowship/scholarship', 'Conduct advanced research on AI system efficiency']
+  }
 ];
