@@ -42,9 +42,13 @@ export const SKILLS_DATA: Skill[] = [
   { name: 'Git / GitHub', level: 'Advanced', category: 'DevOps' },
 
   // IoT & Embedded Hardware
-  { name: 'ESP32', level: 'Intermediate', category: 'IoT & Hardware' },
+  { name: 'ESP32', level: 'Advanced', category: 'IoT & Hardware' },
   { name: 'Arduino', level: 'Intermediate', category: 'IoT & Hardware' },
   { name: 'Motor Drivers (L298N) & Robotics Chassis', level: 'Intermediate', category: 'IoT & Hardware' },
+  { name: 'DHT 11 & 22 Sensors', level: 'Advanced', category: 'IoT & Hardware' },
+  { name: 'MQTT', level: 'Intermediate', category: 'IoT & Hardware' },
+  { name: 'Mosquitto', level: 'Intermediate', category: 'IoT & Hardware' },
+
 ];
 
 export const TIMELINE_DATA: TimelineEvent[] = [
@@ -54,7 +58,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     type: 'leadership',
     title: 'Secretary General (BPA)',
     subtitle: 'HMIF Student Body - ITENAS',
-    period: 'Feb 2026 - Present',
+    period: 'Feb 2026 - Agu 2026',
     responsibilities: [
       'Leading documentation and organizational workflows across HMIF ITENAS activities.',
       'Coordinating internal council processes and formal organizational correspondence.'
@@ -90,7 +94,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     type: 'experience', // Atau 'leadership'
     title: 'Chief Executive of the New Member Acceptance  2024',
     subtitle: 'Itenas No Nippon Kurabu (INKU)',
-    period: 'Jul 2024 -Sep 2024',
+    period: 'Jul 2024 - Sep 2024',
     responsibilities: [
       'Lead and coordinate the entire new member onboarding process, including selection, orientation, and integration into the organization.',
       'Design, delegate, and oversee internal and external workflows to ensure the onboarding process runs smoothly and efficiently.',
@@ -101,7 +105,7 @@ export const TIMELINE_DATA: TimelineEvent[] = [
     type: 'experience', // Atau 'leadership'
     title: 'Head of Logistics Division for the 2024 Graduation',
     subtitle: 'HMIF Student Body - ITENAS',
-    period: 'Jul 2024 -Sep 2024',
+    period: 'Jul 2024 - Sep 2024',
     responsibilities: [
       'Lead and coordinate the entire logistics process for the graduation event, including venue setup, facilities, and infrastructure.',
       'Document logistics needs, schedule deliveries, and ensure all equipment is available on time.',
@@ -112,16 +116,17 @@ export const TIMELINE_DATA: TimelineEvent[] = [
 export const PROJECTS_DATA: Project[] = [
   {
     slug: 'webptdi-gcg-module',
-    title: 'PT Dirgantara Indonesia Good Corporate Governance Module',
+    title: 'PT Dirgantara Indonesia Company Website',
     category: 'Web Development',
-    shortDescription: 'A Laravel 12 module for managing corporate governance documents, with a centralized config registry and PDF viewer.',
+    shortDescription: 'A Laravel 12 project about PT Dirgantara Indonesia Company Website',
     detailedDescription: 'Built and extended a GCG module inside a larger Laravel 12 web application (webptdi), including bug fixes, a centralized configuration registry, a PDF.js-based in-browser file viewer, and admin-facing upload functionality for governance documents.',
     problemStatement: 'The organization needed a reliable way for admins to upload, manage, and display governance documents without scattered configuration or unreliable file rendering.',
     solution: 'Refactored the module around a centralized config registry, integrated PDF.js for consistent in-browser document viewing, and built admin upload flows on top of Laravel and Filament.',
     role: 'Backend / Full-Stack Developer',
     technologies: ['Laravel 12', 'PHP', 'PDF.js', 'MySQL'],
     features: ['Centralized configuration registry', 'In-browser PDF viewer', 'Admin document upload management'],
-    featured: true
+    featured: true,
+    liveUrl: 'https://www.indonesian-aerospace.com/en/',                    // opsional
   },
   {
     slug: 'wbs-portal-PTDI',
@@ -134,19 +139,24 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Backend / Full-Stack Developer',
     technologies: ['Laravel 12', 'PHP', 'Filament', 'PDF.js', 'MySQL'],
     features: ['Centralized configuration registry', 'In-browser PDF viewer', 'Admin document upload management'],
-    featured: true
+    featured: true,
+    liveUrl: 'https://wbs.indonesian-aerospace.com/',                    // opsional
   },
   {
-    slug: 'ta-tabular-ml-benchmark',
-    title: 'Tabular ML Benchmark Study (Undergraduate Thesis)',
+    slug: 'ta-indonesian-hybrid-rag-optimization',
+    title: 'Indonesian Hybrid RAG System Optimization (Undergraduate Thesis)',
     category: 'Machine Learning',
-    shortDescription: 'A comparative benchmark of classical and deep learning methods on a single tabular dataset.',
-    detailedDescription: 'Ongoing undergraduate thesis comparing five methods — Logistic Regression, Random Forest, XGBoost/LightGBM, TabNet, and FT-Transformer — on one tabular dataset, evaluating tradeoffs between classical and deep tabular learning approaches.',
-    problemStatement: 'Deep learning methods for tabular data are often assumed to outperform classical models, but the tradeoffs in practice — accuracy, training cost, interpretability — are less clear-cut.',
-    solution: 'Designed a controlled benchmark pipeline evaluating all five methods on the same dataset and metrics, building on prior coursework implementing FT-Transformer and TabNet.',
+    shortDescription: 'Optimization and evaluation of an Indonesian Hybrid RAG system combining sparse and dense retrieval using the RAGAS framework.',
+    detailedDescription: 'Ongoing undergraduate thesis focused on optimizing an Indonesian Hybrid Retrieval-Augmented Generation (RAG) system based on BM25 and BGE-M3. The study evaluates system performance and retriever tradeoffs using key metrics from the RAGAS evaluation framework.',
+    problemStatement: 'Single-retrieval RAG pipelines often struggle with complex Indonesian queries due to limitations in capturing both exact keyword matches and deep semantic context, while systematic evaluation using standardized frameworks remains underexplored.',
+    solution: 'Built a hybrid retrieval pipeline integrating sparse (BM25) and dense (BGE-M3) methods, optimizing the retrieval parameters and quantitatively assessing performance using RAGAS metrics.',
     role: 'Researcher',
-    technologies: ['Python', 'PyTorch', 'Scikit-Learn', 'XGBoost', 'LightGBM', 'Pandas'],
-    features: ['Five-method comparative benchmark', 'Consistent preprocessing and evaluation pipeline', 'Classical vs. deep tabular learning analysis'],
+    technologies: ['Python', 'LangChain', 'PyTorch', 'BM25', 'BGE-M3', 'RAGAS Framework', 'Hugging Face'],
+    features: [
+    'Hybrid retrieval architecture (BM25 + BGE-M3)',
+    'End-to-end Indonesian language RAG optimization',
+    'Comprehensive evaluation using RAGAS metrics'
+  ],
     featured: true
   },
   {
@@ -160,7 +170,7 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Security Lab Engineer',
     technologies: ['Wazuh SIEM', 'Linux', 'Telegram API', 'Ubuntu Networking'],
     features: ['Custom detection rules', 'Active response automation', 'Real-time Telegram alerting'],
-    featured: false
+    featured: false 
   },
   {
     slug: 'mindmate-mental-health-chatbot',
@@ -173,7 +183,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Frontend Developer',
     technologies: ['JavaScript', 'HTML/CSS', 'Node.js', 'Python'],
     features: ['Bayesian stress diagnosis logic', 'Conversational question flow', 'Result visualization'],
-    featured: false
+    featured: false,
+    githubUrl: 'https://github.com/FarisyIlman/MindMate_Sistem_pakar_dan_bahasa_alamiah_', // opsional
   },
   {
     slug: 'ft-transformer-tabular-datasets',
@@ -186,7 +197,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Researcher / Student',
     technologies: ['Python', 'PyTorch', 'Pandas', 'Scikit-Learn'],
     features: ['Custom FT-Transformer implementation', 'Evaluation across four tabular datasets', 'Written academic performance report'],
-    featured: false
+    featured: false,
+    githubUrl: 'https://github.com/username/repo-name', // opsional
   },
   {
     slug: 'knn-regression-notebook',
@@ -199,7 +211,8 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Student',
     technologies: ['Python', 'Scikit-Learn', 'Pandas', 'Google Colab'],
     features: ['Multi-dataset KNN regression pipeline', 'Consistent preprocessing per dataset', 'Cleaned-up, restructured notebook'],
-    featured: false
+    featured: false,
+    githubUrl: 'https://github.com/FarisyIlman/Deep_Learning_with_regression_method_on_4_different_dataset'
   },
   {
     slug: 'esp32-robotic-chassis',
@@ -212,7 +225,9 @@ export const PROJECTS_DATA: Project[] = [
     role: 'Embedded Systems Developer',
     technologies: ['ESP32', 'C++', 'L298N H-Bridge Driver', 'PWM Control'],
     features: ['Synchronized 4-wheel drive', 'PWM speed control', 'Basic sensor feedback loop'],
-    featured: false
+    featured: false,
+        githubUrl: 'https://github.com/username/repo-name', // opsional
+    liveUrl: 'https://example.com',                    // opsional  
   }
 ];
 

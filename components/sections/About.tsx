@@ -52,17 +52,17 @@ export function About() {
             className="lg:col-span-7 space-y-6 text-slate-300 leading-relaxed text-base md:text-lg font-normal"
           >
             <p>
-              Hello, I am <strong className="text-white font-medium">Farisy Ilman</strong>, an undergraduate Informatics student currently in my seventh semester at <strong className="text-cyan-400 font-medium">ITENAS</strong>. My journey into computer science is driven by a fascination with system architecture, software engineering practices, and more recently the mechanics behind machine learning and intelligent processing frameworks.
+              Hello, I am <strong className="text-white font-medium">Farisy Ilman</strong>, an undergraduate Informatics student currently in my seventh semester at <strong className="text-orange-400 font-medium">ITENAS</strong>. My journey into computer science is driven by a fascination with system architecture, software engineering practices, and more recently the mechanics behind machine learning and intelligent processing frameworks.
             </p>
             <p>
-              I approach development through an architectural lens. My work spans building and maintaining production Laravel systems, like a Good Corporate Governance module with centralized configuration and document handling, to exploring machine learning on tabular data. </p>
-              <p>For my undergraduate thesis, I&apos;m running a comparative benchmark study across classical and deep learning methods Logistic Regression, Random Forest, XGBoost/LightGBM, TabNet, and FT-Transformer  to evaluate how each performs on real-world tabular problems. I&apos;ve also worked hands-on with security tooling, configuring detection pipelines and response automation in Wazuh.</p>
+              I approach development through an architectural lens. My work spans building and maintaining production Laravel systems, like a Good Corporate Governance module with centralized configuration and document handling on PT Dirgantara Indonesia Company Website and on Whistleblowing system website. </p>
+              <p>For my undergraduate thesis, I am conducting a benchmark optimization study on an Indonesian Hybrid RAG system combining sparse (BM25) and dense (BGE-M3) retrieval methods to evaluate system performance using RAGAS framework metrics. Ive also worked hands-on with security tooling, configuring detection pipelines and response automation in Wazuh.</p>
             
             <p>
-              Long-term, I&apos;m working toward a <strong className="text-white font-medium">Master&apos;s degree</strong> and a specialization in <strong className="text-white font-medium">MLOps</strong> bridging the gap between experimental ML models and reliable, deployed systems, so that intelligent software can be shipped with the same rigor and stability as any production application.
+              Long-term, I am working toward a <strong className="text-white font-medium">Masters degree</strong> and a specialization in <strong className="text-white font-medium">MLOps</strong> bridging the gap between experimental ML models and reliable, deployed systems, so that intelligent software can be shipped with the same rigor and stability as any production application.
             </p>
             <p>
-              Beyond technical parameters, I am deeply committed to operational leadership. As Secretary General of BPA within HMIF ITENAS, I lead documentation and organizational workflows across student activities from Dies Natalis to new student orientation because I believe engineering excellence is amplified when paired with transparent process and open communication across teams.
+              Beyond technical parameters, I am deeply committed to operational leadership. As Secretary General of BPA within HMIF ITENAS, I lead documentation and organizational workflows across student activities from proposal to financial management because I believe engineering excellence is amplified when paired with transparent process and open communication across teams.
             </p>
           </motion.div>
 
@@ -101,8 +101,8 @@ export function About() {
                 </div>
                 <div>
                   <h4 className="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Currently</h4>
-                  <p className="text-white font-bold text-sm">Thesis &amp; Production Systems</p>
-                  <p className="text-xs text-slate-400">Benchmarking ML methods on tabular data for my thesis, alongside building the GCG module in a production Laravel app.</p>
+                  <p className="text-white font-bold text-sm">My Bachelor Thesis</p>
+                  <p className="text-xs text-slate-400">Optimization of an Indonesian Hybrid Retrieval-Augmented Generation System Based on BM25 and BGE-M3 Using RAGAS Framework Metrics for Evaluation</p>
                 </div>
               </div>
             </motion.div>
@@ -116,7 +116,8 @@ export function About() {
                 <div>
                   <h4 className="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Organizational Leadership</h4>
                   <p className="text-white font-bold text-sm">Secretary General, BPA HMIF</p>
-                  <p className="text-xs text-slate-400">Leading documentation and workflow across HMIF ITENAS activities, from Dies Natalis to student orientation.</p>
+                  <p className="text-xs text-slate-400">Leading documentation and workflow across HMIF ITENAS activities, from 
+                    proposal to financial management.</p>
                 </div>
               </div>
             </motion.div>

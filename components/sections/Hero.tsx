@@ -6,15 +6,15 @@ import { motion, Variants } from 'framer-motion';
 import { ArrowUpRight, Terminal } from 'lucide-react';
 
 const ROLES = [
-  'Informatics Engineer',
-  'Intelligent Systems Developer',
-  'Full Stack Developer',
-  'Machine Learning Engineer',
-  'Deep Learning Enthusiast',
-  'Large Language Model Integrator',
-  'IoT & Embedded Systems Specialist',
-  'Data Science Analyst',
-  'LLM and RAG Future Engineer'
+  'Software Systems',
+  'Intelligent Systems',
+  'Full-Stack Website',
+  'Machine Learning Pipelines & Models',
+  'Deep Learning Architectures',
+  'Large Language Models Integrations',
+  'IoT & Embedded Systems',
+  'Data-Driven Insights & Analytics',
+  'Next-Gen LLM & RAG Solutions'
 ];
 
 export function Hero() {
@@ -119,7 +119,7 @@ export function Hero() {
           variants={itemVariants}
           className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
         >
-          Seventh-semester Informatics undergraduate building a foundation in software engineering while moving toward machine learning, deep learning, and LLM-based systems. Aiming to grow into MLOps — designing and deploying reliable, production-ready AI pipelines. 
+          Seventh-semester Informatics undergraduate building a foundation in software engineering while moving toward machine learning, deep learning, and LLM-based systems. Aiming to grow into MLOps and designing and deploying reliable, production-ready AI pipelines. 
         </motion.p>
 
         {/* Premium Action Controls */}
